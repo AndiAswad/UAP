@@ -1,0 +1,19 @@
+[project]
+name = "UAP"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "AndiAswad", email = "andi.aswad88@gmail.com"},
+]
+dependencies = ["Streamlit>=1.41.1", "joblib>=1.4.2"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+src = "src"
+
+[tool.pdm.scripts]
+start = "streamlit run ./src/navigasi.py"
